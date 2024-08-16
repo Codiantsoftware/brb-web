@@ -19,9 +19,14 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
    cd brb-web
    ```
 
-1. **install:**
+2. **Install dependencies:**
 
    ```bash
    npm install
+   ```
+
+3. **Running the Project Locally:**
+
+   ```bash
    npm run dev
    ```
