@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55">
+  <g id="icon_02" transform="translate(-658 -348)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="27.5" cy="27.5" r="27.5" transform="translate(658 348)" fill="#efbcb5"/>
+    <g id="carbon_network-3" transform="translate(667.75 357.75)">
+      <path id="Path_3" data-name="Path 3" d="M33.75,33.75h-9v-9h9ZM27,31.5h4.5V27H27Zm-4.5-1.125H9a6.75,6.75,0,1,1,0-13.5h2.25v2.25H9a4.5,4.5,0,1,0,0,9H22.5Z" fill="#904130"/>
+      <path id="Path_4" data-name="Path 4" d="M22.5,22.5h-9v-9h9Zm-6.75-2.25h4.5v-4.5h-4.5Z" fill="#904130"/>
+      <path id="Path_5" data-name="Path 5" d="M27,19.125H24.75v-2.25H27a4.5,4.5,0,1,0,0-9H13.5V5.625H27a6.75,6.75,0,1,1,0,13.5ZM11.25,11.25h-9v-9h9ZM4.5,9H9V4.5H4.5Z" fill="#904130"/>
+    </g>
+  </g>
+</svg>

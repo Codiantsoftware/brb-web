@@ -1,0 +1,28 @@
+[
+    {   
+        "image": "images/dollar-icon.svg",
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"      
+    },
+    {   "image": "images/track-icon.svg",
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {   "image": "images/user-icon.svg",
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {   "image": "images/speaker-icon.svg",
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {   "image": "images/right-icon.svg",
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    },
+    {   "image": "images/search-icon.svg",
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
+    }
+
+]
