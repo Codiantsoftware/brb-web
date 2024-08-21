@@ -1,4 +1,3 @@
-
 const Cards = ({...props}) => {  
   return (
     <div className="cardSection_box">

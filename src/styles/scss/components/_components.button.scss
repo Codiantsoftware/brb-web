@@ -1,0 +1,73 @@
+// variables
+$height:48px;
+$height-xl:50px;
+$height-md:45px;
+$height-sm:40px;
+$white-color:color(50);
+$btn-primary: color(500);
+
+$btnColors: (
+  primary: (
+    clr: $white-color,
+    bg: $btn-primary,
+  )
+);
+.btn{
+    height: $height;@include flexcenter(both);
+    border-radius: 8px;padding:10px 20px;font-weight:500; font-size: 16px; line-height: 1.5;
+    display: inline-flex;
+    &.min-150{min-width: 150px;}
+    @each $key, $clrValue in $btnColors {
+        // solid button
+        &-#{$key} {
+            @include button-variant(map-get($clrValue, clr), map-get($clrValue, bg), map-get($clrValue, bg));
+        }
+        // outline button
+        &-outline-#{$key} {
+            @include button-outline-variant(map-get($clrValue, bg), map-get($clrValue, clr), map-get($clrValue, bg));
+        }   
+    }
+    @include media-breakpoint-down(xxl){
+      height: $height-md;
+      &.min-150{min-width: 120px;}
+    }
+    @include media-breakpoint-down(xl){
+      font-size: 15px;
+    }
+    @include media-breakpoint-down(lg){
+      height: $height-sm; padding: 5px 15px; font-size: 14px; white-space: nowrap;
+      &.min-150{min-width: 100px;}
+    }
+}
+// Ripple Effect
+@keyframes ripple {
+  0% {
+      transform: scale(4);
+  }
+  100% {
+      opacity: 0; transform: scale(40);
+  }
+}
+.ripple-effect-dark,
+.ripple-effect {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.ripple-effect span.ripple-overlay,
+.ripple-effect-dark span.ripple-overlay {
+    animation: ripple 0.9s;
+    border-radius: 100%;
+    background: $white-color;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+    line-height: 1;
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: 0;
+}
+.ripple-effect-dark span.ripple-overlay {
+    background: color(900); opacity: 0.07;
+}
+

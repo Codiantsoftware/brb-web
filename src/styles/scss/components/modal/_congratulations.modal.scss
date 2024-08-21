@@ -1,0 +1,70 @@
+.congratulationModal{
+    .modal-content{
+        max-width: 461px;
+        border-radius: 12px;
+        border: none;
+    }
+    &_body{
+        padding: 50px 20px 20px;
+        h3{
+            font-size: 22px; 
+            line-height: 1.5;
+            font-weight: 600;
+            color: color(800);
+            margin-block: 10px;
+        }
+        p{
+            font-size: 12px;
+            line-height: 1.5;
+            color: color(300);
+            max-width: 402px;
+            margin: 0;
+        }
+        .billingInfo{
+            background: color(100);
+            border-radius: 8px;
+            padding: 11px;
+            margin-block: 27px;
+            p{
+                font-size: 13px; color: color(800);
+                +p{
+                    margin-top: 10px;
+                }
+                span{
+                    font-weight: 600 !important;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        &_body{
+            padding: 30px 20px 20px;
+            h3{
+                font-size: 20px; 
+                margin-block: 6px;
+            }
+            .billingInfo{
+                padding: 11px;
+                margin-block: 22px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &_body{
+            padding: 20px;
+            h3{
+                font-size: 18px; 
+            }
+            .billingInfo{
+                padding: 8px;
+                margin-block: 15px;
+                p{
+                    +p{
+                        margin-top: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

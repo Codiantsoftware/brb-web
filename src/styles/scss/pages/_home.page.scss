@@ -1,60 +1,70 @@
-body{
-    font-family: "Poppins", sans-serif;
-}
-.container{
-    max-width: 1222px;
-}
-.cardSection_heading{
-    margin-bottom: 32px;
-}
-.cardSection_heading h1{
-    font-size: 32px;line-height: 1.2;color: #28221D;
-    font-family: $fontFamily;max-width: 1060px;margin: 0 auto 36px;text-align: center;
+.cardSection{
+    &_heading{
+        margin-bottom: 32px;
+        h1{
+            font-size: 32px;line-height: 1.2;color: color(800);
+            font-family: $fontFamily;max-width: 1060px;margin: 0 auto 36px;text-align: center;
+        }
+        p{
+            font-size: 20px;line-height: 1.5;font-weight: 500;color: color(300);
+        }
+    }
+    &_box{
+        padding: 24px 16px 40px;border-radius: 15px;background-color: #f3f0eb;
+        img{
+            margin-bottom: 18px;
+        }
+        h3{
+            font-size: 24px;line-height: 1.5;font-weight: 600;margin-bottom: 8px;
+        }
+        p{
+            font-size: 16px;line-height: 1.5;font-weight: 400;margin-bottom: 0;
+        }
+    }
 } 
-.cardSection_heading p{
-    font-size: 20px;line-height: 1.5;font-weight: 500;color: #747474;
-} 
-.cardSection_box{
-    padding: 24px 16px 40px;border-radius: 15px;background-color: #f3f0eb;
-}
-.cardSection_box img{
-    margin-bottom: 18px;
-}
-.cardSection_box h3{
-    font-size: 24px;line-height: 1.5;font-weight: 600;margin-bottom: 8px;color: #28221D;
-}
-.cardSection_box p{
-    font-size: 16px;line-height: 1.5;font-weight: 400;margin-bottom: 0;color: #28221D;
-}
+
 @include media-breakpoint-down(xxl) {
-    .cardSection_heading h1{ font-size: 28px;margin-bottom: 30px;}
-    .cardSection_heading p{ font-size: 18px;}
-    .cardSection_box img{
-        margin-bottom: 15px;
+    .cardSection{
+        &_heading{
+            h1{  font-size: 28px;margin-bottom: 30px;}
+            p{ font-size: 18px;}
+        }
+        &_box{
+            padding: 20px 16px 30px; 
+            img{
+                margin-bottom: 15px;
+            }
+            h3{ font-size: 22px;}
+            p{ font-size: 15px;}
+        }
     }
-    .cardSection_box h3{
-        font-size: 22px;
-    }
-    .cardSection_box p{ font-size: 15px;}
-    .cardSection_box{ padding: 20px 16px 30px; }
 }
 @include media-breakpoint-down(lg) {
-    .cardSection_heading h1{ font-size: 24px;margin-bottom: 20px;}
-    .cardSection_heading p{ font-size: 16px;line-height: 1.25;}
-    .cardSection_box h3{
-        font-size: 20px;
+    .cardSection{
+        &_heading{
+            h1{ font-size: 24px;margin-bottom: 20px;} 
+            p{font-size: 16px;line-height: 1.25;}
+        }
+        &_box{
+            padding: 15px 15px 20px;
+            h3{ font-size: 20px;} 
+            p{ font-size: 14px;}
+        }
     }
-    .cardSection_box p{ font-size: 14px;}
-    .cardSection_box{ padding: 15px 15px 20px; }
 }
 @include media-breakpoint-down(sm) {
-    .cardSection_heading h1{ font-size: 22px;margin-bottom: 20px;}
-    .cardSection_heading p{ font-size: 15px;}
-    .cardSection_box img{
-        margin-bottom: 10px;
+    .cardSection{
+        &_heading{
+            h1{ font-size: 22px;margin-bottom: 20px;} 
+            p{font-size: 15px;}
+        }
+        &_box{
+            img{
+                margin-bottom: 10px;
+            }
+            h3{
+                font-size: 18px;
+            }
+        }
     }
-    .cardSection_box h3{
-        font-size: 18px;
-    }
-
 }
